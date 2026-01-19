@@ -3,199 +3,317 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Jessa Lorenzana Portfolio</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 100px
-        }
-
-        h1 {
-            color: #333
-        }
-
-        p {
-            color: #555
-        }
-
-        h2 {
-            color: #1e90ff;
-            margin-top: 50px;
-        }
-
-        ul {
-            list-style-type: disc;
-            /* bullet points */
-            margin-left: auto;
-            margin-right: auto;
-            width: fit-content;
-            text-align: left;
-        }
-
-        section {
-            margin-bottom: 60px;
-        }
-
-        nav {
-            margin-bottom: 60px;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #1e90ff;
-        }
-
-        .project-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            margin: 30px auto;
-            max-width: 900px;
-            flex-wrap: wrap;
-        }
-
-        .project-card {
-            border: 1px solid #ddd;
-            padding: 20px;
-            width: 250px;
-            border-radius: 12px;
-            text-align: center;
-
-            background-color: #fff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3ms ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-        }
-
-        .project-card h3 {
-            margin-top: 0;
-            color: #333;
-        }
-
-        .project-card p {
-            font-size: 14px;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .project-link {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .hero {
-            margin-bottom: 80px;
-        }
-
-        .hero h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-
-        .hero-info {
-            font-size: 14px;
-            color: #555;
-        }
-
-        .hero-info a {
-            color: #1e90ff;
-            text-decoration: none;
-        }
-
-        .hero-info a:hover {
-            text-decoration: underline;
-        }
-    </style>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessa L. Lorenzana | Portfolio</title>
+    <meta name="description" content="Fresh Computer Engineering graduate - Aspiring Web Developer & QA Enthusiast">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="container">
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-        <header class="hero">
-            <h1>Jessa L. Lorenzana</h1>
-
-            <p class="hero-info">
-                Salvacion, Daraga Albay 4501 Philippines | 09764458747 |
-                <a href="mailto:lorenzanajessa09@gmail.com">lorenzanajessa09@gmail.com</a> |
-                <a href="https://www.linkedin.com/in/jessa-lorenzana-b511a9373" target="_blank">LinkedIn
-                </a>
-
-            </p>
-        </header>
-        <section>
-            <h1>Hello! I'm Jessa Lorenzana</h1>
-            <p>Welcome to my portfolio website.</p>
-        </section>
-
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I'm a beginner web developer learning HTML, CSS, and JavaScript.
-                I enjoy building websites and learning new skills.
-            </p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-
-            <div class="project-container">
-                <a href="project-1.html" class="project-link">
-                    <div class="project-card">
-                        <h3>My First Webpage</h3>
-                        <p>A simple HTML page to practice basic tags and structure.</p>
-                    </div>
-                </a>
-
-                <a href="project-2.html" class="project-link">
-                    <div class="project-card">
-                        <h3>HTML & CSS Practice</h3>
-                        <p>A small project focused on layouts, colors, and styling.</p>
-                    </div>
-                </a>
-
-                <a href="project-3.html" class="project-link">
-                    <div class="project-card">
-                        <h3>Portfolio Homepage</h3>
-                        <p>This website showcasing my work and learning progress.</p>
-                    </div>
-                </a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <svg class="heart-icon small" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+                <span class="gradient-text">Jessa</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
             </div>
-        </section>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="sparkle sparkle-1">✦</div>
+        <div class="sparkle sparkle-2">✦</div>
+        <div class="sparkle sparkle-3">✦</div>
+        <div class="heart heart-1">♥</div>
+        <div class="heart heart-2">♥</div>
+        <div class="sparkle sparkle-4">✦</div>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>
-                Email:
-                <a href="mailto:lorenzanajessa09@gmail.com">
+        <div class="hero-content">
+            <div class="avatar-container">
+                <div class="avatar">
+                    <span>👩‍💻</span>
+                </div>
+            </div>
+            <h1 class="gradient-text">Jessa L. Lorenzana</h1>
+            <p class="tagline">✨ Aspiring Web Developer & QA Enthusiast ✨</p>
+
+            <div class="contact-badges">
+                <a href="mailto:lorenzanajessa09@gmail.com" class="badge badge-primary">
+                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
                     lorenzanajessa09@gmail.com
                 </a>
-            </p>
-        </section>
-    </div>
+                <span class="badge badge-mint">
+                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Salvacion, Daraga, Albay, Philippines
+                </span>
+                <a href="https://www.linkedin.com/in/jessa-lorenzana-b511a9373" target="_blank"
+                    rel="noopener noreferrer" class="badge badge-lavender">
+                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                    LinkedIn
+                </a>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View My Projects 💖</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch ✉️</a>
+            </div>
+        </div>
+
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none">
+                <path
+                    d="M0 120L48 105C96 90 192 60 288 45C384 30 480 30 576 37.5C672 45 768 60 864 67.5C960 75 1056 75 1152 67.5C1248 60 1344 45 1392 37.5L1440 30V120H1392C1344 120 1248 120 1152 120C1056 120 960 120 864 120C768 120 672 120 576 120C480 120 384 120 288 120C192 120 96 120 48 120H0Z"
+                    fill="#fffaf5" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="heart-icon-text">♥</span>
+                <span class="gradient-text">About Me</span>
+                <span class="heart-icon-text">♥</span>
+            </h2>
+
+            <div class="kawaii-card about-card">
+                <div class="sparkle-decor sparkle-top-right">✦</div>
+                <div class="sparkle-decor sparkle-bottom-left">✦</div>
+
+                <div class="about-content">
+                    <div class="about-illustration">
+                        <span>🌸</span>
+                    </div>
+                    <div class="about-text">
+                        <p class="about-main">
+                            Fresh Computer Engineering graduate seeking an entry-level technology role in
+                            <span class="highlight highlight-primary">IT Operations</span>,
+                            <span class="highlight highlight-lavender">Software Testing</span>, or
+                            <span class="highlight highlight-mint">Technical Support</span>.
+                        </p>
+                        <p class="about-secondary">
+                            Motivated to learn, follow structured processes, and support systems with accuracy and
+                            reliability. I bring a detail-oriented approach and genuine enthusiasm for technology! ✨
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-muted">
+        <div class="container">
+            <h2 class="section-title">
+                <span>✨</span>
+                <span class="gradient-text">My Projects</span>
+                <span>✨</span>
+            </h2>
+            <p class="section-subtitle">Here are some things I've been working on! 💕</p>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="sparkle-decor sparkle-top-right">✦</div>
+                    <div class="project-icon project-icon-primary">🌟</div>
+                    <h3>My First Webpage</h3>
+                    <p>Beginner HTML and CSS practice website - my first step into web development!</p>
+                    <div class="project-arrow">→</div>
+                </div>
+
+                <div class="project-card">
+                    <div class="sparkle-decor sparkle-top-right">✦</div>
+                    <div class="project-icon project-icon-lavender">🎨</div>
+                    <h3>HTML & CSS Practice</h3>
+                    <p>Focused on layouts, spacing, and design fundamentals.</p>
+                    <div class="project-arrow">→</div>
+                </div>
+
+                <div class="project-card">
+                    <div class="sparkle-decor sparkle-top-right">✦</div>
+                    <div class="project-icon project-icon-mint">💼</div>
+                    <h3>Portfolio Homepage</h3>
+                    <p>Personal portfolio showcasing projects and skills.</p>
+                    <div class="project-arrow">→</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="heart-icon-text">♥</span>
+                <span class="gradient-text">My Skills</span>
+                <span class="heart-icon-text">♥</span>
+            </h2>
+
+            <div class="skills-grid">
+                <div class="kawaii-card">
+                    <div class="sparkle-decor sparkle-top-right">✦</div>
+                    <h3 class="skills-title">💻 Technical Skills</h3>
+                    <div class="skills-badges">
+                        <span class="skill-badge skill-badge-tech">🔧 Basic IT Troubleshooting</span>
+                        <span class="skill-badge skill-badge-tech">🧪 Manual Software Testing</span>
+                        <span class="skill-badge skill-badge-tech">📝 Issue Documentation</span>
+                        <span class="skill-badge skill-badge-tech">🌐 HTML</span>
+                        <span class="skill-badge skill-badge-tech">🎨 CSS</span>
+                        <span class="skill-badge skill-badge-tech">⚡ JavaScript (beginner)</span>
+                        <span class="skill-badge skill-badge-tech">🐍 Python (beginner)</span>
+                    </div>
+                </div>
+
+                <div class="kawaii-card">
+                    <div class="sparkle-decor sparkle-top-right accent">✦</div>
+                    <h3 class="skills-title">🌟 Soft Skills</h3>
+                    <div class="skills-badges">
+                        <span class="skill-badge skill-badge-soft">🔍 Detail-oriented</span>
+                        <span class="skill-badge skill-badge-soft">📚 Willing to learn</span>
+                        <span class="skill-badge skill-badge-soft">🌱 Adaptable</span>
+                        <span class="skill-badge skill-badge-soft">✅ Follows procedures</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-muted">
+        <div class="container">
+            <h2 class="section-title">
+                <span>🌸</span>
+                <span class="gradient-text">Experience</span>
+                <span>🌸</span>
+            </h2>
+
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item timeline-left">
+                    <div class="timeline-dot"></div>
+                    <div class="kawaii-card timeline-card">
+                        <div class="sparkle-decor sparkle-top-right">✦</div>
+                        <div class="experience-header">
+                            <div class="experience-icon">💼</div>
+                            <div class="experience-info">
+                                <h3>IT Support Intern</h3>
+                                <p class="experience-company">ArmLink Computer Center</p>
+                                <span class="experience-period">May – Aug 2023</span>
+                            </div>
+                        </div>
+                        <p class="experience-description">Assisted with technical support, troubleshooting, and
+                            maintenance of computer systems.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item timeline-right">
+                    <div class="timeline-dot"></div>
+                    <div class="kawaii-card timeline-card">
+                        <div class="sparkle-decor sparkle-top-right">✦</div>
+                        <div class="experience-header">
+                            <div class="experience-icon">🚁</div>
+                            <div class="experience-info">
+                                <h3>Thesis Project</h3>
+                                <p class="experience-company">Drone-Based Coconut Pest Detector</p>
+                                <span class="experience-period">Academic Project</span>
+                            </div>
+                        </div>
+                        <p class="experience-description">Developed an innovative solution using drone technology and
+                            machine learning for agricultural pest detection.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item timeline-left">
+                    <div class="timeline-dot"></div>
+                    <div class="kawaii-card timeline-card">
+                        <div class="sparkle-decor sparkle-top-right">✦</div>
+                        <div class="experience-header">
+                            <div class="experience-icon">📋</div>
+                            <div class="experience-info">
+                                <h3>OWWA ODSP Scholar</h3>
+                                <p class="experience-company">Office Support</p>
+                                <span class="experience-period">Scholarship Program</span>
+                            </div>
+                        </div>
+                        <p class="experience-description">Provided administrative support and office assistance as part
+                            of the scholarship program.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="sparkle sparkle-1">✦</div>
+        <div class="heart heart-1">♥</div>
+        <div class="sparkle sparkle-3">✦</div>
+
+        <div class="container contact-container">
+            <h2 class="section-title">
+                <span class="heart-icon-text">♥</span>
+                <span class="gradient-text">Let's Connect!</span>
+                <span class="heart-icon-text">♥</span>
+            </h2>
+            <p class="section-subtitle">I'd love to hear from you! Feel free to reach out 💕</p>
+
+            <div class="contact-buttons">
+                <a href="mailto:lorenzanajessa09@gmail.com" class="btn btn-primary">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                    Send me an email ✉️
+                </a>
+                <a href="https://www.linkedin.com/in/jessa-lorenzana-b511a9373" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-lavender">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                    Connect on LinkedIn 💼
+                </a>
+            </div>
+
+            <div class="kawaii-card footer-card">
+                <p class="footer-text">Made with <span class="heart-bounce">♥</span> by Jessa</p>
+                <p class="footer-thanks">Thank you for visiting! ✨🌸</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
